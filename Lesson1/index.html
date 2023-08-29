@@ -7,14 +7,30 @@
 </head>
 <body>
     <script>
-        function test(name,surname,age){
-          if ((name =='Nikita' || surname === 'mvp') && age>18 && age<25){
-            alert(`Name ${name} Surname ${surname} Old ${age} Young ${age}`);
-          } else {
-            alert('Name is not finded');
+
+     let userInput = prompt('Who is there?', '');
+        if (userInput === Admin) {
+          
+          let pass = prompt('Password?', '');
+
+          if (pass === 'The Master') {
+            alert( 'Welcome!' );
           }
+           else if (pass === '' || pass === null) {
+            alert('Canceled');
           }
-        test('Nikita','mvp',20);
+          else if {
+            alert( 'Wrong password');
+          } 
+        }
+
+        else if( userInput === '' || userInput === null ) {
+          alert( 'Canceled');
+        }
+        else {
+          alert( 'I do not know you');
+        }
+
 
         
     </script>
